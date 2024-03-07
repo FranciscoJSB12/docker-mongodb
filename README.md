@@ -1,17 +1,17 @@
 # Up container
 
 ```
-docker-compose up -d mongodb
+docker compose up -d mongo
 ```
 
 # Check
 
 ```
-docker-compose ps
+docker compose ps
 ```
 
 # Down container
 
 ```
-docker-compose down
+docker compose down
 ```
