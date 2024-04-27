@@ -1,13 +1,13 @@
 version: '3'
 services:
   mongo:
-    image: mongo:5.0
     container_name: mongo-db
-    restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: root
+    image: mongo:6.0
+    volumes:
+      - mongo-db:/data/db
     ports:
       - 27017:27017
-    volumes:
-      - ./mongo_data:/data/db
+
+volumes:
+  mongo-db:
+    external: true
