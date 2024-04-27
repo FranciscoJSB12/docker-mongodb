@@ -9,3 +9,8 @@ docker compose up -d
 ```
 docker compose down
 ```
+# Connection string
+
+```
+mongodb://admin:secret@localhost:27017
+```
